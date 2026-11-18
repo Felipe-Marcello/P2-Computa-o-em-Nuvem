@@ -1,1 +1,8 @@
+objetivo criar um deployment e verificar os pods gerenciados pelo kubernetes
+Evidência 3 - Deployment e Pod
 
+Comando utilizado:
+
+kubectl getpos
+
+Insira a saída do terminal mostrando o Pod criado.
