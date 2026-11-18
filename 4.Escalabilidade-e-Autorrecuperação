@@ -1,5 +1,3 @@
-objetivo aumentar a quantidade de réplicas e observar a recuperação automática após a exclusão de um pod
-
 Evidencia 4 - Escalabilidade
 
 Comandos utilizados:
@@ -10,6 +8,13 @@ kubectl get pods
 
 Insira a evidência mostrando os três Pods da aplicação.
 
+root@controlplane:~$ kubectl scale deployment meu-deployment --replicas=3
+deployment.apps/meu-deployment scaled
+root@controlplane:~$ kubectl get pods
+NAME                              READY   STATUS    RESTARTS   AGE
+meu-deployment-6b854844d7-58nwq   1/1     Running   0          18m
+meu-deployment-6b854844d7-cldqk   1/1     Running   0          17s
+meu-deployment-6b854844d7-gpk4d   1/1     Running   0          17s
 
 Evidência 5 - Autorrecuperação 
 
@@ -20,3 +25,11 @@ kubectl delete pod NOME_DO_POD
 kubectl get pods
 
 Insira a evidência mostrando que um novo pod foi criado após a exclusão.
+
+root@controlplane:~$ kubectl delete pod meu-deployment-6b854844d7-58nwq
+pod "meu-deployment-6b854844d7-58nwq" deleted from default namespace
+root@controlplane:~$ kubectl get pods
+NAME                              READY   STATUS    RESTARTS   AGE
+meu-deployment-6b854844d7-cldqk   1/1     Running   0          2m9s
+meu-deployment-6b854844d7-gpk4d   1/1     Running   0          2m9s
+meu-deployment-6b854844d7-q4jmt   1/1     Running   0          10s
