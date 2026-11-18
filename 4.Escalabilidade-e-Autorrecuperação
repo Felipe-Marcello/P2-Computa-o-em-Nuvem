@@ -5,3 +5,18 @@ Evidencia 4 - Escalabilidade
 Comandos utilizados:
 
 kubectl scale deployment comunicado-web --replicas=3
+
+kubectl get pods
+
+Insira a evidência mostrando os três Pods da aplicação.
+
+
+Evidência 5 - Autorrecuperação 
+
+Comandos utilizados:
+
+kubectl delete pod NOME_DO_POD
+
+kubectl get pods
+
+Insira a evidência mostrando que um novo pod foi criado após a exclusão.
