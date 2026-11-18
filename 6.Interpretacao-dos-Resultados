@@ -1,8 +1,15 @@
 Questão 1 - Qual é a diferença entre uma imagem docker e um contêiner em execução?
+Docker é usado para criar contêineres, enquanto contêiner é a execução de um ambiente isoado desse modelo
 
 Questão 2 - Qual é a função de um Deployment no Kubernetes?
 
+Deployment gerencia, replica, atualiza e tem recuperação automática de Pods
+
 Questão 3 - O que aconteceu quando você excluiu um Pod? Porque isso aconteceu?
 
+Quando eu exclui o Pod ele se recriou porém com um nome diferente, isso aconteceu porque o deployment estava gerenciando e monitorando ele.
+
 Questão 4 - Qual é a finalidade de um Service no Kubernetes?
+
+O Service no Kubernetes é permitir a comunicação e o acesso aos Pods fornecendo uma melhor forma de conexão mesmo quando os Pods são recriados.
 
