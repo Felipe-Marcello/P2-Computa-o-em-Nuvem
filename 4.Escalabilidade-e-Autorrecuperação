@@ -1,0 +1,7 @@
+objetivo aumentar a quantidade de réplicas e observar a recuperação automática após a exclusão de um pod
+
+Evidencia 4 - Escalabilidade
+
+Comandos utilizados:
+
+kubectl scale deployment comunicado-web --replicas=3
