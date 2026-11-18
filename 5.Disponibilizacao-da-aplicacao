@@ -7,3 +7,16 @@ Comandos utilizados:
 kubectl get services
 
 kubectl run teste --image=curlimages/curl --rm -it --restart=Never --curl http://comunicado-service
+
+
+root@controlplane:~$ kubectl get services
+NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   13d
+
+root@controlplane:~$ kubectl run teste --image=curlimages/curl --rm -it --restart=Never curl http://comunicado-service
+^[[Acurl: (6) Could not resolve host: comunicado-service
+All commands and output from this session will be recorded in container logs, including credentials and sensitive information passed through the command prompt.
+If you don't see a command prompt, try pressing enter.
+Session ended, resume using 'kubectl attach teste -c teste -n default -i -t' command
+pod "teste" deleted from default namespace
+pod default/teste terminated (Error)
