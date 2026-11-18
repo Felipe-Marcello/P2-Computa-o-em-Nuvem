@@ -4,4 +4,19 @@ Comando utilizado:
 
 docker ps
 
+Insira abaixo a saída do terminal mostrando o contêiner comunicado em execução.
 
+root@ubuntu:~/meu-site$ docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                                     NAMES
+dd76b077fb04   nginx     "/docker-entrypoint.…"   14 seconds ago   Up 14 seconds   0.0.0.0:8090->80/tcp, [::]:8090->80/tcp   pagina-pessoal
+
+Evidência 2 - Página personalizada
+
+Comando utilizado:
+
+curl http://localhost:8090
+
+Insira a saída do terminal mostrando a mensagem personalizada com seu nome.
+
+root@ubuntu:~/meu-site$ curl http://localhost:8090
+<h1>Atividade Docker - Felipe Antonio Souza Marcello</h1>
