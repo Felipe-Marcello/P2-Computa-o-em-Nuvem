@@ -1,0 +1,9 @@
+objetico criar um service e verificar a comunicação http dentro do cluster kubernetes.
+
+Evidência 6 - Service e acesso http
+
+Comandos utilizados:
+
+kubectl get services
+
+kubectl run teste --image=curlimages/curl --rm -it --restart=Never --curl http://comunicado-service
