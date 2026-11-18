@@ -1,4 +1,3 @@
-objetivo criar um deployment e verificar os pods gerenciados pelo kubernetes
 Evidência 3 - Deployment e Pod
 
 Comando utilizado:
@@ -6,3 +5,7 @@ Comando utilizado:
 kubectl getpos
 
 Insira a saída do terminal mostrando o Pod criado.
+
+root@controlplane:~$ kubectl get pods
+NAME                              READY   STATUS    RESTARTS   AGE
+meu-deployment-6b854844d7-58nwq   1/1     Running   0          13m
