@@ -1,1 +1,7 @@
 descreva brevemente o que voce aprendeu durante a atividade pratica, destacando a utilizacao do docker e do kubernetes
+
+
+
+Com a utilização do docker aprendi a criar um conteiner temporario, a como acessar ele e a como personalisar.
+Com o kubernets aprendi a como criar um deployment para gerenciar os pods, também aprendi a criar e deletar replicas de um pod 
+e assim aprendendo como funciona a autorecuperção desse pod, foi ensinado a criar um service com acesso a http.
